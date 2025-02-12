@@ -14,11 +14,7 @@ route.get("/logout", FrontController.logout);
 route.post("/changePassword", checkAuth, FrontController.changePassword);
 route.post("/updateProfile", checkAuth, FrontController.updateProfile);
 
-
-
-
 route.post("/teacher/insertStudent", CourseController.studentInsert);
 route.post("/teacher/courseView", CourseController.courseView);
-
 
 module.exports = route;
