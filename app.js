@@ -3,6 +3,8 @@ const connectDb = require('./db/connectdb')
 const app = express()
 const port = 3000
 const web = require('./routes/web')
+const cors = require('cors')
+app.use(cors())
 
 const cookieParser = require('cookie-parser')
 app.use(cookieParser())
